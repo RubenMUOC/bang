@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://j5nvun63xchu"]
+
+[ext_resource type="Script" uid="uid://rvndm78f0qc3" path="res://Debug/debug.gd" id="1_3bml8"]
+
+[node name="Debug" type="Control" unique_id=449759]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_3bml8")
+
+[node name="MainLayout" type="VBoxContainer" parent="." unique_id=1083617801]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1320.0
+
+[node name="Header" type="HBoxContainer" parent="MainLayout" unique_id=418981234]
+layout_mode = 2
+
+[node name="GameInfo" type="Label" parent="MainLayout" unique_id=1649434502]
+layout_mode = 2
+
+[node name="DeckListLabel" type="Label" parent="MainLayout" unique_id=2135885516]
+layout_mode = 2
+
+[node name="DiscardListLabel" type="Label" parent="MainLayout" unique_id=1222330122]
+layout_mode = 2
+
+[node name="RevealedCardsContainer" type="HBoxContainer" parent="MainLayout" unique_id=402915974]
+visible = false
+layout_mode = 2
+alignment = 1
+
+[node name="PlayersScroll" type="ScrollContainer" parent="MainLayout" unique_id=1899724490]
+custom_minimum_size = Vector2(0, 700)
+layout_mode = 2
+
+[node name="PlayersContainer" type="VBoxContainer" parent="MainLayout/PlayersScroll" unique_id=1201722806]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="DebugControls" type="HBoxContainer" parent="MainLayout" unique_id=1623685908]
+layout_mode = 2
+
+[node name="StartGameButton" type="Button" parent="MainLayout/DebugControls" unique_id=1019298780]
+layout_mode = 2
+text = "Iniciar partida"

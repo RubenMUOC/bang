@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://3iit1ava1ggp"]
+
+[ext_resource type="Script" uid="uid://da4pquub4rw5f" path="res://Debug/debug_player_panel.gd" id="1_5pn1a"]
+
+[node name="PlayerPanel" type="PanelContainer" unique_id=1046545733]
+offset_right = 320.0
+offset_bottom = 220.0
+script = ExtResource("1_5pn1a")
+
+[node name="Content" type="VBoxContainer" parent="." unique_id=1299688365]
+layout_mode = 2
+
+[node name="PlayerInfo" type="Label" parent="Content" unique_id=564046406]
+layout_mode = 2
+
+[node name="HealthInfo" type="Label" parent="Content" unique_id=713691133]
+layout_mode = 2
+
+[node name="WeaponInfo" type="Label" parent="Content" unique_id=1048062922]
+layout_mode = 2
+
+[node name="TableTitle" type="Label" parent="Content" unique_id=1930935736]
+layout_mode = 2
+
+[node name="TableCards" type="HBoxContainer" parent="Content" unique_id=998661092]
+layout_mode = 2
+
+[node name="HandTitle" type="Label" parent="Content/TableCards" unique_id=1007417176]
+layout_mode = 2
+
+[node name="HandCards" type="HBoxContainer" parent="Content" unique_id=865723889]
+layout_mode = 2
